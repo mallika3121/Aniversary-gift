@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary Avinash ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff5f9e,#ffc6d9);
+text-align:center;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+padding:60px 20px;
+}
+
+h1{
+font-size:42px;
+}
+
+p{
+font-size:20px;
+margin-top:10px;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+font-size:20px;
+background:#fff;
+color:#ff4081;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.gallery{
+display:none;
+padding:30px;
+}
+
+.gallery img{
+width:90%;
+max-width:350px;
+border-radius:20px;
+margin:20px auto;
+display:block;
+box-shadow:0 0 20px rgba(255,255,255,.5);
+}
+
+.letter{
+display:none;
+padding:25px;
+font-size:20px;
+line-height:1.8;
+}
+
+.final{
+display:none;
+padding:50px;
+font-size:30px;
+font-weight:bold;
+}
+
+.heart{
+position:fixed;
+top:-20px;
+color:red;
+animation:fall 8s linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-20px);}
+100%{transform:translateY(110vh);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1> Happy 1st Anniversary  nannaaa💝</h1>
+
+<p>Avinash 💗Mallika</p>
+
+<button onclick="nextPage()">Click To Begin ❤️</button>
+
+</header>
+<div class="gallery" id="gallery">
+
+<h2>💖 Our Beautiful Memories 💖</h2>
+
+<img src="photo1.jpg" alt="Photo 1">
+<p>💗 Every moment with you is my favorite memory.</p>
+
+<img src="photo2.jpg" alt="Photo 2">
+<p>💝 Every smile we share becomes a beautiful chapter in our love story.</p>
+
+<img src="photo3.jpg" alt="Photo 3">
+<p>💕 No matter where life takes us, my heart will always choose you.</p>
+
+<button onclick="showLetter()">💌 Read My Letter</button>
+
+</div>
+
+<div class="letter" id="letter">
+
+<h2>💌 To My Dearest Avinash 💌</h2>
+
+<p>
+
+Happy First Anniversary, my love. ❤️
+
+You are the most valuable person in this world to me.
+
+I always loved you.
+
+Through every hardship, I will never leave your hand.
+
+Thank you for filling my life with happiness, love and unforgettable memories.
+
+No matter what happens in life, my heart will always choose you.
+
+I LOVE YOU SO MUCH.
+
+💖 I LOVE YOU FOREVER NANNAAAAA 💖
+
+Forever Yours,
+
+Mallika ❤️
+
+</p>
+
+<button onclick="showFinal()">💖 One Last Surprise</button>
+
+</div>
+
+<div class="final" id="final">
+
+<h1> I LOVE YOU FOREVER NANNAAAAA 💗</h1>
+
+<h2> Happy 1st Anniversary 🌹</h2>
+
+<h2>Avinash ❤️ Mallika</h2>
+
+<p>Forever & Always 💕</p>
+
+</div>
+
+<script>
+
+function nextPage(){
+document.querySelector("header").style.display="none";
+document.getElementById("gallery").style.display="block";
+}
+
+function showLetter(){
+document.getElementById("gallery").style.display="none";
+document.getElementById("letter").style.display="block";
+}
+
+function showFinal(){
+document.getElementById("letter").style.display="none";
+document.getElementById("final").style.display="block";
+
+for(let i=0;i<50;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(Math.random()*5+3)+"s";
+document.body.appendChild(h);
+}
+}
+
+</script>
+
+</body>
+</html>
